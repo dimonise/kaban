@@ -1,0 +1,90 @@
+.footer {
+	@include span-columns(12);
+	padding: 30px;
+	background-color: #10784a;
+	.footer-column-1 {
+		@include span-columns(3);
+		@include media($mobile) {
+			@include span-columns(12);
+			text-align: center;
+		}
+		.footer-social {
+			@include span-columns(12);
+			margin: 20px 0;
+				i {
+					font-size: 28px;
+					color: #fff;
+					margin: 5px;
+						a {
+							color: #fff;
+						}
+				}
+		}
+		.footer-phone {
+			@include span-columns(12);
+			i {
+				font-size: 24px;
+				color: #fff;
+				margin: 5px;
+			}
+
+			a {
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+		.footer-mail {
+			@include span-columns(12);
+			i {
+				font-size: 24px;
+				color: #fff;
+				margin: 5px;
+			}
+
+			a {
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+		.footer-time {
+			@include span-columns(12);
+			i {
+				font-size: 24px;
+				color: #fff;
+				margin: 5px;
+			}
+
+			span {
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+
+		ul li {
+			&:first-child {
+				color: #fff;
+				margin-bottom: 20px;
+				@include media ($mobile) {
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+			}
+			a {
+				color: #72c39f;
+				line-height: 22px;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+}
+.footer-copyright {
+	@include span-columns(12);
+	padding: 30px;
+	background: #1b905b;
+	text-align: center;
+	color: #fff;
+}

@@ -1,0 +1,40 @@
+h1 {
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 25px;
+	@include media ($mobile2) {
+		font-size: 30px;
+		margin-top: 15px;
+	}
+}
+h3 {
+	color: #000;
+	font-size: 24px;
+	@include media ($mobile2) {
+		font-size: 20px;
+	}
+}
+p {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+a {
+	text-decoration: none;
+}
+.wrapper {
+	@include outer-container;
+	font-family: Arial;
+}
+.header-up {
+	@include span-columns(12);
+	padding: 10px;
+	background-color: #fff;
+  border-bottom: 1px solid #dfe1d9;
+  position: relative;
+  z-index: 2;
+}
+.header-up-fixed {
+	position: fixed;
+	z-index: 2;
+}

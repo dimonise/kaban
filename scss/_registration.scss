@@ -1,0 +1,169 @@
+.registration-1 {
+	@include span-columns(6);
+	padding: 70px 8vw;
+	@include media ($mobile) {
+		@include span-columns(12);
+		padding: 20px 8vw;
+	}
+	p {
+		color: #959595;
+		font-size: 12px;
+		line-height: 18px;
+		a {
+			color: #000;
+			font-weight: bold;
+			margin: 30px 0;
+		}
+	}
+	.registration-a {
+		border: 1px solid #ff5722;
+    background-color: transparent;
+    color: #ff5722;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    &:hover {
+    	background-color: #ff5722;
+	    color: #fff;
+	    border-color: transparent;
+    }
+	}
+	ul li {
+		margin-bottom: 35px;
+		p {
+			margin: 10px 0 0;
+		}
+		i {
+			font-size: 45px;
+			margin-right: 20px;
+		}
+		.fa-briefcase {
+			color: #008eff;
+		}
+		.fa-clock-o {
+			color: #ff5900;
+		}
+		.fa-money {
+			color: #3eac00;
+		}
+	}
+	.reg-icon, .reg-text {
+		display: table-cell;
+		vertical-align: top;
+	}
+}
+.registration-2 {
+	@include span-columns(6);
+	background: #f1f4e8;
+	margin-right: 0;
+	@include media ($mobile) {
+		@include span-columns(12);
+	}
+	.social-reg {
+		text-align: center;
+		padding: 70px 8vw;
+		@include media ($mobile) {
+			padding: 20px 8vw;
+		}
+		h4 {
+			color: #000;
+    	font-size: 24px;
+    	margin-bottom: 20px;
+		}
+		i {
+			color: #fff;
+			line-height: 47px;
+			font-size: 24px;
+		}
+		a {
+			padding: 0px 45px;
+	    background: #23599b;
+	    border-radius: 5px;
+	    display: inline-block;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		p {
+			margin: 30px 0;
+			text-align: center;
+			color: #464646;
+    	font-size: 12px;
+		}
+		.reg-form {
+			display: inline-block;
+	    width: 100%;
+	    outline: 0 none;
+	    border: 1px solid #d9d9d9;
+	    font: 15px/18px Arial, sans-serif;
+	    padding: 11px 10px;
+	    background-color: #fff;
+	    margin-bottom: 15px;
+	    border-radius: 3px;
+	    -webkit-box-shadow: 0 1px 2px #f2f2f2 inset;
+	    -moz-box-shadow: 0 1px 2px #f2f2f2 inset;
+	    box-shadow: 0 1px 2px #f2f2f2 inset;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    -webkit-transition: border-color 0.2s ease;
+	    -moz-transition: border-color 0.2s ease;
+	    -o-transition: border-color 0.2s ease;
+	    transition: border-color 0.2s ease;
+		}
+		form a {
+			background: none;
+			color: #1e905d;
+		}
+		label a {
+			color: #1e905d;
+			background: none;
+			padding: 0;
+		}
+		button {
+			width: 190px;
+	    background: #ff5722;
+	    height: 40px;
+	    border: 0;
+	    outline: 0;
+	    border-radius: 5px;
+	    color: #fff;
+	    font-size: 14px;
+	    cursor: pointer;
+	    transition: 0.5s all;
+	    margin: 30px auto 5px;
+	    display: block;
+			&:hover {
+				background-color: #e34310;
+			}
+		}
+	}
+}
+.registration-3 {
+	@include span-columns(12);
+	border-top: 1px solid #ccc;
+	padding: 20px 8vw;
+	h4 {
+		font-size: 22px;
+		color: #000;
+	}
+	h5 {
+		font-size: 16px;
+		color: #000;
+		margin: 20px 0;
+		line-height: 20px;
+	}
+	p {
+		color: #959595;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    @include media ($mobile) {
+    	font-size: 12px;
+    }
+	}
+}
